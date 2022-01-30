@@ -58,6 +58,7 @@ src: url(Futura.ttc);
 
 .about .container {
     padding-top: 300px;
+    padding-bottom: 70px;
     margin: 0 auto;
     height: 480px;
 }
@@ -70,7 +71,7 @@ src: url(Futura.ttc);
 .about .container h2 {
     font-family: 'Galada', cursive;
     font-size: 55px;
-    padding-top: 80px;
+    padding-top: 120px;
     color: #1e50a2;
     padding-left: 200px;
     width: 300px;
@@ -138,7 +139,7 @@ src: url(Futura.ttc);
     float: left;
     width: 400px;
     margin-left: 60px;
-    margin-top: 70px;
+    margin-top: 35px;
     box-shadow: 55px 55px #44807A;
 
 }
@@ -164,7 +165,7 @@ src: url(Futura.ttc);
     left: 590px;
     font-family: 'Galada', cursive;
     font-size: 55px;
-    padding-top: 140px;
+    padding-top: 120px;
     padding-left: 300px;
     color: #1e50a2;
 }
@@ -216,7 +217,7 @@ src: url(Futura.ttc);
 .cc {
       position: absolute;
     top: 85px;
-    left: 500px;
+    left: 420px;
     width: 200px;
     height: 150px;
     background-color: #54b7ac;
@@ -226,18 +227,18 @@ src: url(Futura.ttc);
 
 /*---------もっとセクション---------*/
 
-.motto .container .content {
+.motto1 .container .content {
     width: 500px;
 }
 
-.motto {
+.motto1 {
     background-color: #F4F6FB;
     height: 700px;
 }
 
 
 
-.motto .container img {
+.motto1 .container img {
     float: left;
     height: 400px;
     margin-left: 250px;
@@ -251,12 +252,12 @@ src: url(Futura.ttc);
 */
 }
 
-.motto .content  {
+.motto1 .content  {
     position: relative;
     z-index: 30;
 }
 
-.aa {
+.aa1 {
     position: absolute;
     top: 100px;
     left: 400px;
@@ -267,9 +268,9 @@ src: url(Futura.ttc);
 
 }
 
-.motto .container h2 {
+.motto1 .container h2 {
     font-family: 'Galada', cursive;
-    font-size: 55px;
+    font-size: 60px;
     padding-top: 190px;
     padding-left: 300px;
     color: #1e50a2;
@@ -277,7 +278,106 @@ src: url(Futura.ttc);
 
 }
 
-.motto .container p {
+.motto1 .container h3 {
+    clear: left;
+    float: left;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    color: #383c3c;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 195px;
+    width: 400px;
+         z-index: 30;
+    
+
+}
+
+.motto1 .container p {
+     clear: left;
+    float: left;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    color: #383c3c;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 100px;
+    width: 600px;
+         z-index: 30;
+     font-size: 20px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    float: left;
+    text-align: center;
+    
+}
+
+.motto1 a {
+    color: #1e50a2;
+    margin-top: 20px;
+     position: absolute;
+     z-index: 10;
+    width: 350px;
+}
+
+/*motto2*/
+
+.motto2 .container .content {
+    width: 500px;
+}
+
+.motto2 {
+    background-color: #F4F6FB;
+    height: 700px;
+}
+
+
+
+.motto2 .container img {
+    float: left;
+    height: 350px;
+    margin-left: 250px;
+    margin-top: 160px;
+     position: absolute;
+     z-index: 10;
+
+/*
+    top: 0;
+    left: 0;
+*/
+}
+
+.motto2 .content  {
+    position: relative;
+    z-index: 30;
+}
+
+.aa2 {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 600px;
+    height: 500px;
+    background-color: #8dc2bc;
+/*    z-index: -10;*/
+
+}
+
+.motto2 .container h2 {
+    clear: left;
+    float: left;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    color: #383c3c;
+    text-align: center;
+    padding-top: 270px;
+    padding-left: 100px;
+    width: 600px;
+         z-index: 30;
+    
+
+}
+
+.motto2 .container p {
     clear: left;
     float: left;
     font-size: 30px;
@@ -288,14 +388,19 @@ src: url(Futura.ttc);
     padding-left: 100px;
     width: 600px;
          z-index: 30;
+    
 
 }
 
-.motto .container p:last-child {
+.motto2 .container p:last-child {
     font-size: 20px;
     font-family: 'Sawarabi Gothic', sans-serif;
     float: left;
     text-align: center;
+}
+
+.motto2 a {
+    color: #a9d6d2;
 }
 
 .link {
@@ -317,6 +422,7 @@ src: url(Futura.ttc);
     color: #1e50a2;
 }
 
+/*
 .insta {
     padding-top: 3%;
     padding-left: 36%;
@@ -325,16 +431,18 @@ src: url(Futura.ttc);
     text-decoration: none;
     color: #1B4A8B;
 }
+*/
 
 .fb {
     float: left;
-    padding-top: 3%;
-    padding-left: 30px;
+    padding-top: 7%;
+    padding-left: 44%;
     text-decoration: none;
     text-align: center;
     color: #1B4A8B;
 }
 
+/*
 .twitter {
     float: left;
     padding-top: 3%;
@@ -343,10 +451,11 @@ src: url(Futura.ttc);
     text-align: center;
     color: #1B4A8B;
 }
+*/
 
 .git {
     float: left;
-    padding-top: 3%;
+    padding-top: 7%;
     padding-left: 30px;
     text-decoration: none;
     text-align: center;
