@@ -1,0 +1,373 @@
+/*
+
+@font-face {
+font-family: title;
+src: url(Futura.ttc);
+}
+*/
+
+/*---------共通パーツ---------*/
+
+/*セクションの中のdiv*/
+.container {
+    overflow: hidden;
+    height: 100%;
+    width: 1300px;
+    margin: 0 auto;
+}
+
+/*文章を囲むdiv*/
+.content {
+    float: left;
+    text-align: center;
+}
+
+
+/*---------トップセクション---------*/
+
+.top {
+    height: 500px;
+    background-color: #80CBC4;
+}
+
+
+.top .container {
+    margin: 0 auto;
+    padding-top: 130px;
+    height: 100%;
+}
+
+
+.top .container img {
+    width: 750px;
+    margin: 0px;
+    float: left;
+    margin-right: 10px;
+}
+
+.top .container h1 {
+    font-family: 'Alfa Slab One', cursive;
+    padding-top: 180px;
+    font-size: 70px;
+    color: #fff;
+    margin-left: 930px;
+}
+
+
+/*---------アバウトセクション---------*/
+
+.about .container {
+    padding-top: 300px;
+    margin: 0 auto;
+    height: 480px;
+}
+
+.about .container .content {
+    width: 500px;
+}
+
+
+.about .container h2 {
+    font-family: 'Galada', cursive;
+    font-size: 55px;
+    padding-top: 80px;
+    color: #1e50a2;
+    padding-left: 200px;
+    width: 300px;
+}
+
+.about .container p {
+    color: #383c3c;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    padding-top: 10px;
+    font-size: 25px;
+    padding-left: 100px;
+    width: 500px;
+    line-height: 150%;
+}
+
+/* beforeとafter両方使って実装する */
+.about .container .content {
+    /* 文章の右側に余白をあける */
+    padding-right: 200px;
+    /* beforeとafterを自由に動かすためにrelativeを指定 */
+    position: relative;
+}
+
+/* beforeとafter両方使って実装する */
+.about .container .content:before,
+.about .container .content:after {
+    /* 内容があるものですと認識させる(本当はないけど) */
+    content: "";
+    /* 私はブロック要素です */
+    display: block;
+    /* 自由に場所動かす */
+    position: absolute;
+    /* とりあえず上からの場所指定 */
+    top: 200px;
+}
+
+/* 黒丸 */
+.about .container .content:before {
+    /* 大きさ！ */
+    width: 7px;
+    height: 7px;
+    /* 背景色を指定してることで色をつけてる */
+    background: #000;
+    /* 四角い物体を丸く */
+    border-radius: 50%;
+    /* 右からどれくらいか */
+    right: 20px;
+    /* 上にちょっとずらす */
+    margin-top: -3px;
+}
+
+/* 線 */
+.about .container .content:after {
+    /* 線の幅 */
+    width: 150px;
+    /* ボーダーつけて線風に */
+    border-bottom: 1px solid #000;
+    /* 右からどれくらいか */
+    right: 20px;
+}
+
+.about .container img {
+    float: left;
+    width: 400px;
+    margin-left: 60px;
+    margin-top: 70px;
+    box-shadow: 55px 55px #44807A;
+
+}
+
+
+
+
+/*---------famousセクション---------*/
+
+.famous {
+    background-color: #F2EEEE;
+    height: 600px;
+}
+
+.famous .container .content {
+    width: 500px;
+}
+
+
+.famous .container h2 {
+    position: absolute;
+    top: 60px;
+    left: 590px;
+    font-family: 'Galada', cursive;
+    font-size: 55px;
+    padding-top: 140px;
+    padding-left: 300px;
+    color: #1e50a2;
+}
+
+.famous .container p {
+    position: absolute;
+    top: 220px;
+    left: 550px;
+    width: 600px;
+    clear: left;
+    float: left;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    color: #383c3c;
+    text-align: center;
+    padding-top: 30px;
+    padding-left: 100px;
+}
+
+.famous .container p:last-child {
+    font-size: 25px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    float: left;
+    text-align: center;
+    line-height: 150%;
+}
+
+.famous img {
+    position: absolute;
+    float: left;
+    margin-left: 160px;
+    margin-top: 140px;
+    z-index: 10;
+
+}
+
+
+.bb {
+    position: absolute;
+    top: 370px;
+    left: 100px;
+    width: 200px;
+    height: 150px;
+    background-color: #54b7ac;
+    box-shadow: -5px 5px #fff;
+}
+
+.cc {
+      position: absolute;
+    top: 85px;
+    left: 500px;
+    width: 200px;
+    height: 150px;
+    background-color: #54b7ac;
+    z-index: 5;
+    box-shadow: 5px -5px #fff;
+}
+
+/*---------もっとセクション---------*/
+
+.motto .container .content {
+    width: 500px;
+}
+
+.motto {
+    background-color: #F4F6FB;
+    height: 700px;
+}
+
+
+
+.motto .container img {
+    float: left;
+    height: 400px;
+    margin-left: 250px;
+    margin-top: 130px;
+     position: absolute;
+     z-index: 10;
+
+/*
+    top: 0;
+    left: 0;
+*/
+}
+
+.motto .content  {
+    position: relative;
+    z-index: 30;
+}
+
+.aa {
+    position: absolute;
+    top: 100px;
+    left: 400px;
+    width: 600px;
+    height: 500px;
+    background-color: #a5e0da;
+/*    z-index: -10;*/
+
+}
+
+.motto .container h2 {
+    font-family: 'Galada', cursive;
+    font-size: 55px;
+    padding-top: 190px;
+    padding-left: 300px;
+    color: #1e50a2;
+    z-index: 19;
+
+}
+
+.motto .container p {
+    clear: left;
+    float: left;
+    font-size: 30px;
+    font-family: 'Noto Serif', serif;
+    color: #383c3c;
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 100px;
+    width: 600px;
+         z-index: 30;
+
+}
+
+.motto .container p:last-child {
+    font-size: 20px;
+    font-family: 'Sawarabi Gothic', sans-serif;
+    float: left;
+    text-align: center;
+}
+
+.link {
+    height: 400px;
+    background-image: url(image/backt.jpg);
+    background-size: 100% auto;
+}
+
+.link h2 {
+    font-family: 'Galada', cursive;
+    font-size: 55px;
+    color: #3facb5;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.link a {
+    text-decoration: none;
+    color: #1e50a2;
+}
+
+.insta {
+    padding-top: 3%;
+    padding-left: 36%;
+    text-align: center;
+    float: left;
+    text-decoration: none;
+    color: #1B4A8B;
+}
+
+.fb {
+    float: left;
+    padding-top: 3%;
+    padding-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #1B4A8B;
+}
+
+.twitter {
+    float: left;
+    padding-top: 3%;
+    padding-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #1B4A8B;
+}
+
+.git {
+    float: left;
+    padding-top: 3%;
+    padding-left: 30px;
+    text-decoration: none;
+    text-align: center;
+    color: #1B4A8B;
+}
+/*
+
+.nanika {
+    height: 400px;
+}
+*/
+
+
+.parent {
+    /*親要素はrelativeに*/
+    position: relative;
+    padding: 10px;
+}
+
+#absolute {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
